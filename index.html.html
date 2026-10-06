@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade 7 Election</title>
+</head>
+
+<body>
+
+<h1>🗳️ Grade 7 Class Election</h1>
+
+<h2>Choose your Candidate</h2>
+
+<h3>Candidate A</h3>
+<button onclick="voteA()">Vote for A</button>
+
+<h3>Candidate B</h3>
+<button onclick="voteB()">Vote for B</button>
+
+<h3>Candidate C</h3>
+<button onclick="voteC()">Vote for C</button>
+
+<h2>Results</h2>
+
+<p>Candidate A: <span id="a">0</span> votes</p>
+<p>Candidate B: <span id="b">0</span> votes</p>
+<p>Candidate C: <span id="c">0</span> votes</p>
+
+<script>
+
+let A = 0;
+let B = 0;
+let C = 0;
+
+function voteA() {
+    A++;
+    document.getElementById("a").innerHTML = A;
+}
+
+function voteB() {
+    B++;
+    document.getElementById("b").innerHTML = B;
+}
+
+function voteC() {
+    C++;
+    document.getElementById("c").innerHTML = C;
+}
+
+</script>
+
+</body>
+</html>
